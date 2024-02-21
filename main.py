@@ -11,7 +11,7 @@ async def start1(update: types.ChatJoinRequest):
     # we accept the user into the channel
     await update.approve()
     # the ability to send a message to the user
-    #await bot.send_message(chat_id=update.from_user.id, text="текст сообщения бота в лс")
+    #await bot.send_message(chat_id=update.from_user.id, text="bot message user")
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
